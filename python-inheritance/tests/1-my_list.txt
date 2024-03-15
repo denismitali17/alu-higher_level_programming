@@ -1,36 +1,10 @@
-=======================
-How to Use 1-my_list.py
-=======================
+#!/usr/bin/python3
+"""Defines an inherited list class MyList."""
 
-This module defines a class ''MyList'' that inherits from ''list''.
 
-Instantiation
-=============
+class MyList(list):
+    """Implements sorted printing for the built-in list class."""
 
-''MyList'' can be instantiated with no arguments, which will return an empty list:
-
-::
-
-     >>> MyList = __import__('1-my_list') .MyList
-     >>> my_list = MyList ()
-     >>> type(my_list)
-     <class '1-my_list.MyList'>
-
-::
-
-     >>> print (my_list)
-     []
-
-Or a single argument, which must be an iterable object.
-
-::
-
-     >>> my_list = MyList ([1, 2, 3))
-     >>> print (my_list)
-     [1, 2, 3)
-
-::
-
-     >>> my_list = MyList(None)
-     Traceback (most recent call last) :
-     TypeError: 'NoneType' object is not iterable
+    def print_sorted(self):
+        """Print a list in sorted ascending order."""
+        print(sorted(self))
