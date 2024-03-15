@@ -129,21 +129,21 @@ Note that lists of strings are sorted lexographically.
    >>> my_list.append("Puppy")
    >>> my_list.append("School")
    >>> my_list.append("Alu")
-   >>> my_list-append("Denis")
+   >>> my_list-append("Betty")
    >>> print(my_list)
-   ['Myname', 'Puppy', 'School', 'Alu', 'Denis']
+   ['Myname', 'Puppy', 'School', 'Alu', 'Betty']
 
 ::
    
    >>> my_list.print_sorted()
-   ['Alu', 'Denis', 'Myname', 'Puppy', 'School']
+   ['Alu', 'Betty', 'Myname', 'Puppy', 'School']
 
 Another friendly reminder that the original list is unaltered :)
 
 ::
 
    >>> print (my_list)
-   ['Myname', 'Puppy', 'School', 'Alu', 'Denis']
+   ['Myname', 'Puppy', 'School', 'Alu', 'Betty']
 
 Nothing to sort with empty lists.
 
@@ -157,7 +157,7 @@ If ''print_sorted(...)'' is called on a list of different types, a TypeError
 
 ::
 
-   >>> my_list = MyList([1, "Denis", "Alu", 5])
+   >>> my_list = MyList([1, "Betty", "Alu", 5])
    >>> my_list.print_sorted()
    Traceback (most recent call last):
    TypeError: unorderable types: str() < int()
