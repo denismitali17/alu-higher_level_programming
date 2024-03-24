@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Sends a POST request to http://0.0.0.0:5000/search_user with a given letter.
 
@@ -23,4 +22,3 @@ if __name__ == "__main__":
             print("[{}] {}".format(response.get("id"), response.get("name")))
     except ValueError:
         print("Not a valid JSON")
-
