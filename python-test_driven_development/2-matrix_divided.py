@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """_summary_
 This module divides all elements of a matrix by a number
